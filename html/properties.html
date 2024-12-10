@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../CSS/propertiesStyle.css">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class="topic"> 
+        <h1>CSS Properties - Color, Font, Text, and Background</h1>
+    </div>
+    <div class="main">
+        
+        <ol>
+            <li>
+                <section>
+                    <h4>Color Properties</h4>
+                    <p>Color properties are used to set the color of text, borders, backgrounds, etc.</p>
+                    <p><strong>Possible values:</strong></p>
+                    <ul>
+                        <li>Color Name (e.g., <code>red</code>, <code>blue</code>)</li>
+                        <li>Hexadecimal color code (e.g., <code>#ff0000</code>)</li>
+                        <li>RGB (e.g., <code>rgb(255, 0, 0)</code>)</li>
+                        <li>RGBA (e.g., <code>rgba(255, 0, 0, 0.5)</code>)</li>
+                        <li>HSL (e.g., <code>hsl(0, 100%, 50%)</code>)</li>
+                        <li>HSLA (e.g., <code>hsla(0, 100%, 50%, 0.5)</code>)</li>
+                    </ul>
+                    <pre>
+                        <code>
+        /* Color Properties */
+        p {
+            color: red; /* Color Name */
+        }
+        
+        div {
+            background-color: #ff0000; /* Hexadecimal */
+            color: rgb(255, 0, 0); /* RGB */
+        }
+                        </code>
+                    </pre>
+                </section>
+            </li>
+        
+            <li>
+                <section>
+                    <h4>Font Properties</h4>
+                    <p>Font properties control the appearance of text.</p>
+                    <p><strong>Possible values:</strong></p>
+                    <ul>
+                        <li><code>font-family</code> (e.g., <code>Arial, sans-serif</code>, <code>'Times New Roman'</code>)</li>
+                        <li><code>font-size</code> (e.g., <code>16px</code>, <code>1em</code>, <code>larger</code>)</li>
+                        <li><code>font-weight</code> (e.g., <code>normal</code>, <code>bold</code>, <code>bolder</code>, <code>100</code> to <code>900</code>)</li>
+                        <li><code>font-style</code> (e.g., <code>normal</code>, <code>italic</code>, <code>oblique</code>)</li>
+                        <li><code>font-variant</code> (e.g., <code>normal</code>, <code>small-caps</code>)</li>
+                        <li><code>line-height</code> (e.g., <code>1.5</code>, <code>20px</code>)</li>
+                    </ul>
+                    <pre>
+                        <code>
+        /* Font Properties */
+        h1 {
+            font-family: 'Arial', sans-serif;
+            font-size: 24px;
+            font-weight: bold;
+            font-style: italic;
+        }
+        
+        p {
+            line-height: 1.5;
+        }
+                        </code>
+                    </pre>
+                </section>
+            </li>
+        
+            <li>
+                <section>
+                    <h4>Text Properties</h4>
+                    <p>Text properties control the styling of text, including alignment, decoration, spacing, etc.</p>
+                    <p><strong>Possible values:</strong></p>
+                    <ul>
+                        <li><code>text-align</code> (e.g., <code>left</code>, <code>center</code>, <code>right</code>, <code>justify</code>)</li>
+                        <li><code>text-transform</code> (e.g., <code>uppercase</code>, <code>lowercase</code>, <code>capitalize</code>)</li>
+                        <li><code>text-decoration</code> (e.g., <code>underline</code>, <code>line-through</code>, <code>none</code>)</li>
+                        <li><code>letter-spacing</code> (e.g., <code>1px</code>, <code>0.1em</code>)</li>
+                        <li><code>word-spacing</code> (e.g., <code>5px</code>, <code>0.2em</code>)</li>
+                        <li><code>text-indent</code> (e.g., <code>20px</code>, <code>2em</code>)</li>
+                        <li><code>white-space</code> (e.g., <code>normal</code>, <code>nowrap</code>, <code>pre</code>)</li>
+                    </ul>
+                    <pre>
+                        <code>
+        /* Text Properties */
+        p {
+            text-align: center;
+            text-transform: uppercase;
+            text-decoration: underline;
+        }
+        
+        h2 {
+            letter-spacing: 2px;
+            word-spacing: 5px;
+            text-indent: 30px;
+        }
+                        </code>
+                    </pre>
+                </section>
+            </li>
+        
+            <li>
+                <section>
+                    <h4>Background Properties</h4>
+                    <p>Background properties allow you to set background colors, images, and related properties for elements.</p>
+                    <p><strong>Possible values:</strong></p>
+                    <ul>
+                        <li><code>background-color</code> (e.g., <code>red</code>, <code>#ff0000</code>, <code>rgba(255, 0, 0, 0.5)</code>)</li>
+                        <li><code>background-image</code> (e.g., <code>url('image.jpg')</code>)</li>
+                        <li><code>background-position</code> (e.g., <code>top left</code>, <code>center</code>, <code>50% 50%</code>)</li>
+                        <li><code>background-size</code> (e.g., <code>cover</code>, <code>contain</code>, <code>100px 100px</code>)</li>
+                        <li><code>background-repeat</code> (e.g., <code>no-repeat</code>, <code>repeat</code>, <code>repeat-x</code>, <code>repeat-y</code>)</li>
+                        <li><code>background-attachment</code> (e.g., <code>scroll</code>, <code>fixed</code>)</li>
+                    </ul>
+                    <pre>
+                        <code>
+        /* Background Properties */
+        div {
+            background-color: #ffcc00;
+            background-image: url('background.jpg');
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+                        </code>
+                    </pre>
+                </section>
+            </li>
+        </ol>
+    </div>
+</body>
+</html>
